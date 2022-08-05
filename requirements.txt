@@ -1,2 +1,3 @@
 Django
-allauth
+django-allauth
+wheel

@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'snsapp.apps.SnsappConfig',
     'allauth',
     'allauth.account',
-    'allauthsocialaccount',
+    'allauth.socialaccount',
 ]
 
 MIDDLEWARE = [
@@ -145,5 +145,9 @@ ACCOUNT_EMAIL_REQUIRED = True
 
 SITE_ID = 1 
 
-LOGIN_REDIRECT_URL = 'home'             #リダイレクト先をhomeページに設定。詳細後述          
-ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = 'home'            
+ #リダイレクト先をhomeページに設定。詳細後述  
+
+LOGIN_URL = 'login'
+
+# ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login/'

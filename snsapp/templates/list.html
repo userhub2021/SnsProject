@@ -3,9 +3,9 @@
 
 {% block content %}
 <div class='container mt-3'>
-    {% cor item in object_list %}
+    {% for item in object_list %}
     <div class="alert alert-success" role="alert">
-        <p>タイトル:<a href="#">{{item.title}}</a></p>
+        <p>タイトル:<a href="{% url 'detail' itme.pk %}">{{item.title}}</a></p>
         <p>投稿者:{{item.user.username}}</p>
     </div>
     {% endfor %}
